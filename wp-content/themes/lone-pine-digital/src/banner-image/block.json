@@ -1,0 +1,27 @@
+{
+  "apiVersion": 3,
+  "name": "lone-pine-digital/banner-image",
+  "title": "Lone Pine Digital - Banner Image",
+  "category": "widgets",
+  "icon": "format-image",
+  "description": "A simple banner image block.",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "attributes": {
+    "scheme": {
+        "type": "string",
+        "default": "eggshell"
+      },
+      "image": {
+        "type": "string",
+        "default": "wp-content/themes/lone-pine-digital/assets/images/16-9-placeholder.png"
+      }
+    },
+  "supports": {
+        "spacing": false,
+        "align": false,
+        "typography": false,
+        "color": false
+  }
+}   

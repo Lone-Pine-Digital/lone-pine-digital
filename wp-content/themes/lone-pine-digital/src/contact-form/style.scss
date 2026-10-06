@@ -1,0 +1,70 @@
+.contact-form {
+    padding: 1.875rem 0 !important;
+    margin: 0 !important;
+    position: relative;
+    @media screen and (min-width: 768px) {
+        padding: 3.75rem 0 !important;
+    }
+    .container {
+        z-index: 2;
+        position: relative;
+
+        .section-body {
+            text-align: center;
+        }
+    }
+    .form {
+        width: 100% !important;
+        max-width: 400px !important;
+        margin: 0 auto !important;
+    }
+    .form-field {
+      padding: 8px 0 !important;
+      max-width: 400px !important;
+      input, textarea, select {
+        font-size: 1rem !important;
+        width: 100% !important;
+        &::placeholder, option.placeholder {
+            color: var(--wp--preset--color--primary) !important;
+        }
+        &:hover, &:focus {
+          outline-color: var(--wp--preset--color--secondary) !important;
+          border: 2px solid var(--wp--preset--color--secondary) !important;
+          &::placeholder {
+              color: var(--wp--preset--color--primary) !important;
+          }
+        }
+      }
+    }
+    .btn {
+        border-width: 2px !important;
+        width: max-content !important;
+        float: right !important;
+        &:hover, &:focus {
+            background: var(--wp--preset--color--white) !important;
+            color: var(--wp--preset--color--primary) !important;
+        }
+    }
+
+    &.dark, &.blue {
+        .btn {
+            border-color: var(--wp--preset--color--primary) !important;
+            color: var(--wp--preset--color--primary) !important;
+            background: var(--wp--preset--color--white) !important;
+            &:hover, &:focus {
+                background: var(--wp--preset--color--primary) !important;
+                color: var(--wp--preset--color--white) !important;
+                border-color: var(--wp--preset--color--white) !important;
+            }
+        }
+    }
+}
+
+div.wpforms-container-full .wpforms-confirmation-container-full, div[submit-success] > .wpforms-confirmation-container-full:not(.wpforms-redirection-message) {
+    background: var(--wp--preset--color--secondary) !important;
+    font-weight: 600 !important;
+    border-color: var(--wp--preset--color--secondary) !important;
+    p {
+        color: var(--wp--preset--color--white) !important;
+    }
+}

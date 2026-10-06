@@ -36,7 +36,7 @@ wp-content/plugins/*
 wp-content/themes/*
 
 # BUT keep your custom theme/plugin
-!wp-content/themes/lone-pine-custom/
+!wp-content/themes/lone-pine-digital/
 !wp-content/plugins/lone-pine-digital/
 
 ##############################

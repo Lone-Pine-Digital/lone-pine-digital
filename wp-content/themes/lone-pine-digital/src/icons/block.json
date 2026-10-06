@@ -1,0 +1,59 @@
+{
+  "apiVersion": 3,
+  "name": "lone-pine-digital/icons",
+  "title": "Lone Pine Digital - Icons",
+  "category": "widgets",
+  "icon": "insert-more",
+  "description": "A grid of text and icons",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "attributes": {
+        "scheme": {
+          "type": "string",
+          "default": "eggshell"
+        },
+        "heading": {
+          "type": "string",
+          "source": "html",
+          "selector": "h2",
+          "default": "Icons Heading"
+        },
+        "bodyText": {
+          "type": "string",
+          "source": "html",
+          "selector": "p",
+          "default": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos."
+        },
+        "items": {
+          "type": "array",
+          "source": "query",
+          "selector": ".icon-item",
+          "default": [],
+          "query": {
+            "icon": {
+              "type": "string",
+              "source": "attribute",
+              "selector": ".icon-item-icon img",
+              "attribute": "src"
+            },
+            "title": {
+              "type": "string",
+              "source": "html",
+              "selector": ".icon-item-title"
+            },
+            "text": {
+              "type": "string",
+              "source": "html",
+              "selector": ".icon-item-content"
+            }
+          }
+        }
+      },
+      "supports": {
+          "spacing": false,
+          "align": false,
+          "typography": false,
+          "color": false
+      }
+}   

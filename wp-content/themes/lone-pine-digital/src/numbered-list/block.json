@@ -1,0 +1,53 @@
+{
+  "apiVersion": 3,
+  "name": "lone-pine-digital/numbered-list",
+  "title": "Lone Pine Digital - Numbered List",
+  "category": "widgets",
+  "icon": "ordered-list",
+  "description": "A vertical numbered list with a scroll effect",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./frontend.js",
+  "attributes": {
+        "scheme": {
+          "type": "string",
+          "default": "white"
+        },
+        "heading": {
+          "type": "string",
+          "source": "html",
+          "selector": "h2",
+          "default": "Numbered List Heading"
+        },
+        "bodyText": {
+          "type": "string",
+          "source": "html",
+          "selector": "p",
+          "default": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos."
+        },
+        "items": {
+            "type": "array",
+            "default": [],
+            "source": "query",
+            "query": {
+              "title": {
+                "type": "string",
+                "source": "html",
+                "default": "List Item Title"
+              },
+              "text": {
+                "type": "string",
+                "source": "html",
+                "default": "List Item Text"
+              }
+            }
+        }
+      },
+      "supports": {
+          "spacing": false,
+          "align": false,
+          "typography": false,
+          "color": false
+      }
+}   

@@ -1,0 +1,63 @@
+{
+  "apiVersion": 3,
+  "name": "lone-pine-digital/hero-home",
+  "title": "Lone Pine Digital - Hero Home",
+  "category": "design",
+  "icon": "cover-image",
+  "description": "A simple hero block with an image, heading, text & buttons.",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "attributes": {
+        "scheme": {
+          "type": "string",
+          "default": "eggshell"
+        },
+        "imageUrl": {
+          "type": "string",
+          "default": ""
+        },
+        "heading": {
+          "type": "string",
+          "source": "html",
+          "selector": "h1",
+          "default": "Page Title"
+        },
+        "subheading": {
+          "type": "string",
+          "source": "html",
+          "selector": "p",
+          "default": "This is the home hero block with a heading and an image."
+        },
+        "buttonOneText": {
+          "type": "string",
+          "default": "Click Me One"
+        },
+        "buttonOneUrl": {
+          "type": "string",
+          "default": "#"
+        },
+        "buttonOnePageId": {
+          "type": "number",
+          "default": 0
+        },
+        "buttonTwoText": {
+          "type": "string",
+          "default": "Click Me Two"
+        },
+        "buttonTwoUrl": {
+          "type": "string",
+          "default": "#"
+        },
+        "buttonTwoPageId": {
+          "type": "number",
+          "default": 0
+        },
+        "supports": {
+          "spacing": false,
+          "align": false,
+          "typography": false,
+          "color": false
+        }
+      }
+}   

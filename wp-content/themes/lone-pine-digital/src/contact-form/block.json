@@ -1,0 +1,39 @@
+{
+  "apiVersion": 3,
+  "name": "lone-pine-digital/contact-form",
+  "title": "Lone Pine Digital - Contact Form",
+  "category": "widgets",
+  "icon": "email",
+  "description": "A block to add a WPForm using a dropdown selector.",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "attributes": {
+    "scheme": {
+      "type": "string",
+      "default": "white"
+    },
+    "formId": {
+      "type": "number",
+      "default": 0
+    },
+    "heading": {
+      "type": "string",
+      "source": "html",
+      "selector": "h2",
+      "default": "Section heading"
+    },
+    "text": {
+      "type": "string",
+      "source": "html",
+      "selector": "p",
+      "default": "Section body text goes here."
+    }
+  },
+  "supports": {
+    "spacing": false,
+    "align": false,
+    "typography": false,
+    "color": false
+  }
+}

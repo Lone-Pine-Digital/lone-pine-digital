@@ -1,0 +1,44 @@
+{
+  "apiVersion": 3,
+  "name": "lone-pine-digital/logos",
+  "title": "Lone Pine Digital - Logos",
+  "category": "design",
+  "icon": "portfolio",
+  "description": "Slider of images in a continuous loop (if there are more than one).",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./frontend.js",
+  "attributes": {
+    "scheme": {
+      "type": "string",
+      "default": "white"
+    },
+    "images": {
+      "type": "array",
+      "default": [],
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "number" },
+          "url": { "type": "string" },
+          "alt": { "type": "string" },
+          "width": { "type": "number" },
+          "height": { "type": "number" }
+        }
+      }
+    },
+    "heading": {
+      "type": "string",
+      "source": "html",
+      "selector": "h2",
+      "default": "Logos Slider"
+    }
+  },
+  "supports": {
+      "spacing": false,
+      "align": false,
+      "typography": false,
+      "color": false
+  }
+}   
