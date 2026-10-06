@@ -1,0 +1,10 @@
+.wp-block-lone-pine-digital-cta-banner, img.cta-banner-image-preview {
+    max-width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    &::before {
+        display: none;
+    }
+}
+

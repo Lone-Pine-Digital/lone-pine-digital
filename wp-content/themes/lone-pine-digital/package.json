@@ -1,0 +1,24 @@
+{
+  "name": "lone-pine-digital",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start",
+    "lint:js": "wp-scripts lint-js",
+    "lint:css": "wp-scripts lint-style",
+    "format": "wp-scripts format"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wordpress/scripts": "^31.2.0",
+    "jquery": "^3.7.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "gsap": "^3.15.0",
+    "swiper": "^12.2.0"
+  }
+}

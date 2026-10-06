@@ -1,0 +1,52 @@
+{
+  "apiVersion": 3,
+  "name": "lone-pine-digital/hero-video",
+  "title": "Lone Pine Digital - Hero Video",
+  "category": "widgets",
+  "icon": "video-alt3",
+  "description": "A hero section with a background video, heading, paragraph and two buttons.",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./frontend.js",
+  "attributes": {
+    "videoUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "heading": {
+      "type": "string",
+      "default": "Your Hero Title"
+    },
+    "paragraph": {
+      "type": "string",
+      "default": "Your supporting paragraph text goes here."
+    },
+
+    "button1Text": {
+      "type": "string",
+      "default": "Button One"
+    },
+    "button1Url": {
+      "type": "string",
+      "default": "#"
+    },
+
+    "button2Text": {
+      "type": "string",
+      "default": "Button Two"
+    },
+    "button2Url": {
+      "type": "string",
+      "default": "#"
+    }
+  },
+
+  "supports": {
+    "spacing": false,
+    "align": false,
+    "typography": false,
+    "color": false,
+    "html": false
+  }
+}

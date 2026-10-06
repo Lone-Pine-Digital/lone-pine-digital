@@ -1,0 +1,36 @@
+{
+  "apiVersion": 3,
+  "name": "lone-pine-digital/map",
+  "title": "Lone Pine Digital - Map",
+  "category": "design",
+  "icon": "location-alt",
+  "description": "Embed a map using shortcode from the WP Maps Go plugin.",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+
+  "attributes": {
+    "scheme": {
+      "type": "string",
+      "default": "white"
+    },
+    "heading": {
+      "type": "string",
+      "default": "Map heading"
+    },
+    "paragraph": {
+      "type": "string",
+      "default": "This is a map block. You can add a map using the WP Maps Go plugin and then paste the shortcode here."
+    },
+    "mapShortcode": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "supports": {
+    "spacing": false,
+    "align": false,
+    "typography": false,
+    "color": false
+  }
+}

@@ -1,0 +1,50 @@
+.icons-section {
+    margin: 0;
+    .section-body {
+        text-align: center;
+        margin: 0 auto;
+        @media screen and (min-width: 1024px) {
+            max-width: 60%;
+        }
+    }
+    .icons {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0 0;
+        @media screen and (min-width: 1024px) {
+            margin: 4rem 0 0;
+        }
+        .icon-item {
+            width: 100%;
+            margin-bottom: 1.5rem;
+            @media screen and (min-width: 768px) {
+                width: calc(50% - 3rem);
+                padding: 0 1.5rem;
+            }
+            @media screen and (min-width: 1024px) {
+                width: calc(25% - 3rem);
+                padding: 0 1.5rem;
+                margin-bottom: 2.5rem;
+            }
+            .icon-item-icon {
+                width: 100px;
+                height: 100px;
+                margin: 0 auto 1.5rem;
+                @media screen and (min-width: 1024px) {
+                   width: 75px;
+                    height: 75px; 
+                }
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+            .icon-item-title {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}

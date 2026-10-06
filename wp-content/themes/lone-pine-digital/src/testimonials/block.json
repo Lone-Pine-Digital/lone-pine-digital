@@ -1,0 +1,36 @@
+{
+  "apiVersion": 3,
+  "name": "lone-pine-digital/testimonials",
+  "title": "Lone Pine Digital - Testimonials",
+  "category": "design",
+  "icon": "star-filled",
+  "description": "A testimonials block for displaying customer reviews.",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./frontend.js",
+  "attributes": {
+        "scheme": {
+          "type": "string",
+          "default": "eggshell"
+        },
+        "heading": {
+          "type": "string",
+          "default": ""
+        },
+        "testimonials": {
+          "type": "array",
+          "default": [
+            { "quote": "Love it"},
+            { "quote": "Like it a decent amount" },
+            { "quote": "Its alright" }
+          ]
+        }
+      },
+        "supports": {
+            "spacing": false,
+            "align": false,
+            "typography": false,
+            "color": false
+        }
+}   

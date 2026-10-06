@@ -1,0 +1,36 @@
+{
+  "apiVersion": 3,
+  "name": "lone-pine-digital/gallery",
+  "title": "Lone Pine Digital - Gallery",
+  "category": "widgets",
+  "icon": "images-alt2",
+  "description": "A gallery of before and after images",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./frontend.js",
+  "attributes": {
+    "scheme": {
+      "type": "string",
+      "default": "white"
+    },
+    "heading": {
+      "type": "string",
+      "source": "html",
+      "selector": "h2",
+      "default": "Gallery Heading"
+    },
+    "imagePairs": [
+      {
+        "before": { "id": 0, "url": "", "alt": "", "width": 0, "height": 0 },
+        "after": { "id": 0, "url": "", "alt": "", "width": 0, "height": 0 }
+      }
+    ]   
+  },
+  "supports": {
+    "spacing": false,
+    "align": false,
+    "typography": false,
+    "color": false
+  }
+}
