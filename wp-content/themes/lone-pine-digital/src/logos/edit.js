@@ -34,9 +34,9 @@ export default function Edit({ attributes, setAttributes }) {
                         label="Color Scheme"
                         value={scheme}
                         options={[
-                            { label: 'White', value: 'white' },
-                            { label: 'Dark', value: 'dark' },
-                            { label: 'Blue', value: 'blue' }
+                            { label: 'Eggshell', value: 'eggshell' },
+                            { label: 'Evergreen', value: 'evergreen' },
+                            { label: 'Celadon', value: 'celadon' }
                         ]}
                         onChange={(value) => setAttributes({ scheme: value })}
                     />
