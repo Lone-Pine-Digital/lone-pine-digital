@@ -12,7 +12,7 @@
   "attributes": {
     "scheme": {
       "type": "string",
-      "default": "white"
+      "default": "eggshell"
     },
     "images": {
       "type": "array",
