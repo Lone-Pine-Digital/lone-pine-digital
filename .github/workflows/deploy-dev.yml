@@ -10,20 +10,16 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Deploy to Hostinger via SSH
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USERNAME }}
-          password: ${{ secrets.SSH_PASSWORD }}
+          key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.SSH_PORT }}
           script: |
-            echo "Testing SSH connection..."
-            whoami
-            pwd
-            ls -la
             echo "Deploying DEV branch to staging..."
             cd ${{ secrets.STAGING_PATH }}
             git pull origin dev
