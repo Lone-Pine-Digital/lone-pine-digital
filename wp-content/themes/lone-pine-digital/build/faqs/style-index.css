@@ -1,0 +1,56 @@
+/*!********************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/faqs/style.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************/
+.faqs .section-heading {
+  margin-bottom: 4rem;
+}
+.faqs .faq-list .faq {
+  border-bottom: 3px solid var(--wp--preset--color--eggshell);
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+.faqs .faq-list .faq .faq-question {
+  padding-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  width: 100%;
+  appearance: none;
+  cursor: inherit;
+  background: none;
+  border: none;
+  text-align: left;
+  margin: 0;
+}
+.faqs .faq-list .faq .faq-question h3 {
+  margin: 0;
+  font-weight: 400;
+  padding-right: 1rem;
+}
+@media screen and (max-width: 1023px) {
+  .faqs .faq-list .faq .faq-question h3 {
+    font-size: var(--wp--preset--font-size--24);
+  }
+}
+.faqs .faq-list .faq .faq-question .icon {
+  width: 1.5rem;
+  height: auto;
+  transform: rotate(-90deg);
+  transition: all 0.25s ease;
+}
+.faqs .faq-list .faq .faq-question .icon.open {
+  transform: rotate(0deg);
+}
+.faqs .faq-list .faq .faq-answer {
+  padding-bottom: 1rem;
+}
+.faqs.eggshell .faq, .faqs.celadon .faq {
+  border-bottom: 3px solid var(--wp--preset--color--evergreen);
+}
+.faqs.eggshell .faq .faq-question, .faqs.celadon .faq .faq-question {
+  color: var(--wp--preset--color--evergreen);
+}
+.faqs.evergreen .faq .faq-question {
+  color: var(--wp--preset--color--eggshell);
+}
+
+/*# sourceMappingURL=style-index.css.map*/

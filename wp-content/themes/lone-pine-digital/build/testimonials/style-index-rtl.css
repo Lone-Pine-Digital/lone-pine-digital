@@ -1,0 +1,43 @@
+/*!****************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/testimonials/style.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************/
+.testimonials {
+  margin: 0 auto;
+  padding: 30px 0;
+  max-width: 100dvw;
+  overflow: hidden;
+}
+@media screen and (min-width: 1024px) {
+  .testimonials {
+    padding: 60px 0;
+  }
+}
+.testimonials .full-width {
+  display: flex;
+  padding: 1.875rem 0;
+}
+@media screen and (min-width: 1024px) {
+  .testimonials .full-width {
+    padding: 3.75rem 0;
+  }
+}
+.testimonials .swiper-wrapper {
+  display: flex;
+  align-items: stretch;
+}
+.testimonials .swiper-wrapper .swiper-slide {
+  width: auto !important;
+  height: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+.testimonials .swiper-wrapper .swiper-slide .testimonial-quote {
+  margin: 0;
+  max-width: 70dvw;
+}
+@media screen and (min-width: 1024px) {
+  .testimonials .swiper-wrapper .swiper-slide .testimonial-quote {
+    max-width: 40dvw;
+  }
+}

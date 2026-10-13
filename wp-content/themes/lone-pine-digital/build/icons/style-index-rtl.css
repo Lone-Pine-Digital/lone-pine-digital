@@ -1,0 +1,63 @@
+/*!*********************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/icons/style.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************/
+.icons-section {
+  margin: 0;
+}
+.icons-section .section-body {
+  text-align: center;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1024px) {
+  .icons-section .section-body {
+    max-width: 60%;
+  }
+}
+.icons-section .icons {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0 0;
+}
+@media screen and (min-width: 1024px) {
+  .icons-section .icons {
+    margin: 4rem 0 0;
+  }
+}
+.icons-section .icons .icon-item {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .icons-section .icons .icon-item {
+    width: calc(50% - 3rem);
+    padding: 0 1.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .icons-section .icons .icon-item {
+    width: calc(25% - 3rem);
+    padding: 0 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+}
+.icons-section .icons .icon-item .icon-item-icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 1.5rem;
+}
+@media screen and (min-width: 1024px) {
+  .icons-section .icons .icon-item .icon-item-icon {
+    width: 75px;
+    height: 75px;
+  }
+}
+.icons-section .icons .icon-item .icon-item-icon img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.icons-section .icons .icon-item .icon-item-title {
+  margin-bottom: 1rem;
+}
