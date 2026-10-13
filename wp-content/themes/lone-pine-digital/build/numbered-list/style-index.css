@@ -1,0 +1,138 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/numbered-list/style.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************/
+.numbered-list {
+  margin: 0;
+}
+.numbered-list .section-body {
+  text-align: center;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1024px) {
+  .numbered-list .section-body {
+    max-width: 60%;
+  }
+}
+.numbered-list.dark .list-item::before, .numbered-list.blue .list-item::before {
+  border-color: var(--wp--preset--color--white);
+}
+.numbered-list.dark .list-item-number, .numbered-list.blue .list-item-number {
+  color: var(--wp--preset--color--white);
+}
+.numbered-list.dark .list-item-indicator, .numbered-list.blue .list-item-indicator {
+  border-color: var(--wp--preset--color--white);
+}
+.numbered-list.dark .list-progress-line, .numbered-list.blue .list-progress-line {
+  background-color: var(--wp--preset--color--white);
+}
+.numbered-list.dark .list-item-indicator {
+  background-color: var(--wp--preset--color--primary);
+}
+.numbered-list.dark .list-item-indicator.active {
+  background-color: var(--wp--preset--color--secondary);
+}
+.numbered-list.blue .list-item-indicator {
+  background-color: var(--wp--preset--color--secondary);
+}
+.numbered-list.blue .list-item-indicator.active {
+  background-color: var(--wp--preset--color--primary);
+}
+.numbered-list.white .list-item::before {
+  border-color: var(--wp--preset--color--primary);
+}
+.numbered-list.white .list-item-number {
+  color: var(--wp--preset--color--primary);
+}
+.numbered-list.white .list-item-indicator {
+  border-color: var(--wp--preset--color--primary);
+  background-color: var(--wp--preset--color--white);
+}
+.numbered-list.white .list-item-indicator.active {
+  background-color: var(--wp--preset--color--secondary);
+}
+.numbered-list.white .list-progress-line {
+  background-color: var(--wp--preset--color--primary);
+}
+.numbered-list .list {
+  padding: 0;
+  margin: 30px auto 0;
+  display: grid;
+  grid-template-columns: auto;
+  position: relative;
+}
+@media screen and (min-width: 1024px) {
+  .numbered-list .list {
+    margin: 60px auto 0;
+    width: max-content;
+  }
+}
+.numbered-list .list-progress-line {
+  position: absolute;
+  left: 9px;
+  top: 0;
+  width: 3px;
+  height: 0;
+  transform-origin: top;
+  transition: height 0.1s linear;
+  z-index: 1;
+}
+.numbered-list .list-item {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  grid-template-rows: auto auto;
+  grid-gap: 1rem;
+  padding-bottom: 2rem;
+  position: relative;
+}
+@media screen and (min-width: 1024px) {
+  .numbered-list .list-item {
+    max-width: 600px;
+    padding-bottom: 4rem;
+  }
+}
+.numbered-list .list-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 9px;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  border-left-width: 3px;
+  border-left-style: dashed;
+  z-index: 0;
+}
+.numbered-list .list-item:last-child {
+  padding-bottom: 0;
+  /*&::before {
+      display: none;
+  }*/
+}
+.numbered-list .list-item-indicator {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border-width: 3px;
+  border-style: solid;
+  grid-column: 1/2;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+.numbered-list .list-item-number {
+  line-height: 1;
+  font-weight: 600;
+  grid-column: 2/3;
+}
+.numbered-list .list-item-number::after {
+  content: ".";
+  display: inline;
+}
+.numbered-list .list-item-number, .numbered-list .list-item-title {
+  margin: 0;
+}
+.numbered-list .list-item-content {
+  margin: 0;
+  grid-column: 2/4;
+}
+
+/*# sourceMappingURL=style-index.css.map*/

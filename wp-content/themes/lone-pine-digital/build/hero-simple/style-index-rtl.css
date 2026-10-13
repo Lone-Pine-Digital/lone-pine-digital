@@ -1,0 +1,55 @@
+/*!***************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/hero-simple/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************/
+.hero-simple {
+  margin: 0 auto;
+}
+.hero-simple.center .container {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  padding: 3.75rem 0;
+}
+@media screen and (min-width: 1024px) {
+  .hero-simple.center .container {
+    padding: 7.5rem 0;
+  }
+}
+.hero-simple.center .container .hero-heading {
+  text-align: center;
+  max-width: initial;
+  margin-left: 0;
+}
+.hero-simple .container {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+@media screen and (min-width: 1024px) {
+  .hero-simple .container {
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 1fr;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .hero-simple .container img {
+    margin-right: -20px;
+    margin-left: -20px;
+    width: calc(100% + 40px);
+  }
+}
+.hero-simple .container .hero-heading {
+  text-align: center;
+  margin: 0;
+  font-size: var(--wp--preset--font-size--64);
+  padding: 3.75rem 0;
+}
+@media screen and (min-width: 1024px) {
+  .hero-simple .container .hero-heading {
+    text-align: right;
+    padding: 0;
+    font-size: var(--wp--preset--font-size--72);
+    margin-left: 1.5rem;
+    max-width: 65dvw;
+  }
+}

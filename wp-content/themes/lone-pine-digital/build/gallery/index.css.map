@@ -1,0 +1,1 @@
+{"version":3,"file":"gallery/index.css","mappings":";;;AAAA;EACI;EACA;EACA;AACJ,C","sources":["webpack://lone-pine-digital/./src/gallery/editor.scss"],"sourcesContent":[".image-carousel-editor img.image-carousel-image-preview {\r\n    max-width: 100%;\r\n    margin-top: 20px;\r\n    display: block;\r\n}"],"names":[],"sourceRoot":""}

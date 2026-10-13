@@ -1,0 +1,71 @@
+/*!****************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/contact-form/style.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************/
+.contact-form {
+  padding: 1.875rem 0 !important;
+  margin: 0 !important;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .contact-form {
+    padding: 3.75rem 0 !important;
+  }
+}
+.contact-form .container {
+  z-index: 2;
+  position: relative;
+}
+.contact-form .container .section-body {
+  text-align: center;
+}
+.contact-form .form {
+  width: 100% !important;
+  max-width: 400px !important;
+  margin: 0 auto !important;
+}
+.contact-form .form-field {
+  padding: 8px 0 !important;
+  max-width: 400px !important;
+}
+.contact-form .form-field input, .contact-form .form-field textarea, .contact-form .form-field select {
+  font-size: 1rem !important;
+  width: 100% !important;
+}
+.contact-form .form-field input::placeholder, .contact-form .form-field input option.placeholder, .contact-form .form-field textarea::placeholder, .contact-form .form-field textarea option.placeholder, .contact-form .form-field select::placeholder, .contact-form .form-field select option.placeholder {
+  color: var(--wp--preset--color--primary) !important;
+}
+.contact-form .form-field input:hover, .contact-form .form-field input:focus, .contact-form .form-field textarea:hover, .contact-form .form-field textarea:focus, .contact-form .form-field select:hover, .contact-form .form-field select:focus {
+  outline-color: var(--wp--preset--color--secondary) !important;
+  border: 2px solid var(--wp--preset--color--secondary) !important;
+}
+.contact-form .form-field input:hover::placeholder, .contact-form .form-field input:focus::placeholder, .contact-form .form-field textarea:hover::placeholder, .contact-form .form-field textarea:focus::placeholder, .contact-form .form-field select:hover::placeholder, .contact-form .form-field select:focus::placeholder {
+  color: var(--wp--preset--color--primary) !important;
+}
+.contact-form .btn {
+  border-width: 2px !important;
+  width: max-content !important;
+  float: left !important;
+}
+.contact-form .btn:hover, .contact-form .btn:focus {
+  background: var(--wp--preset--color--white) !important;
+  color: var(--wp--preset--color--primary) !important;
+}
+.contact-form.dark .btn, .contact-form.blue .btn {
+  border-color: var(--wp--preset--color--primary) !important;
+  color: var(--wp--preset--color--primary) !important;
+  background: var(--wp--preset--color--white) !important;
+}
+.contact-form.dark .btn:hover, .contact-form.dark .btn:focus, .contact-form.blue .btn:hover, .contact-form.blue .btn:focus {
+  background: var(--wp--preset--color--primary) !important;
+  color: var(--wp--preset--color--white) !important;
+  border-color: var(--wp--preset--color--white) !important;
+}
+
+div.wpforms-container-full .wpforms-confirmation-container-full, div[submit-success] > .wpforms-confirmation-container-full:not(.wpforms-redirection-message) {
+  background: var(--wp--preset--color--secondary) !important;
+  font-weight: 600 !important;
+  border-color: var(--wp--preset--color--secondary) !important;
+}
+div.wpforms-container-full .wpforms-confirmation-container-full p, div[submit-success] > .wpforms-confirmation-container-full:not(.wpforms-redirection-message) p {
+  color: var(--wp--preset--color--white) !important;
+}

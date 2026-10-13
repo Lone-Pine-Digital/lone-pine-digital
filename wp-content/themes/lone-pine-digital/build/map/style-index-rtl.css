@@ -1,0 +1,47 @@
+/*!*******************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/map/style.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************/
+.map-section {
+  padding: 30px 0;
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .map-section {
+    padding: 60px 0;
+  }
+}
+.map-section .section-heading {
+  margin: 0 auto 1rem;
+  max-width: 90%;
+  padding: 1.875rem 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .map-section .section-heading {
+    padding: 3.75rem 2.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .map-section .section-heading {
+    padding: 3.75rem 0;
+    margin: 0 auto 2rem;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .map-section .section-heading {
+    max-width: 1400px;
+  }
+}
+.map-section .section-body {
+  margin: 0 auto 1rem;
+  max-width: 90%;
+}
+@media screen and (min-width: 1024px) {
+  .map-section .section-body {
+    margin: 0 auto 2rem;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .map-section .section-body {
+    max-width: 1400px;
+  }
+}

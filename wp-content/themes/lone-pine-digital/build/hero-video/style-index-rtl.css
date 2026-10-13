@@ -1,0 +1,82 @@
+/*!**************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/hero-video/style.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************/
+.hero-video {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100dvh;
+  overflow: hidden;
+  margin-top: -75px;
+}
+.hero-video::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(1, 44, 55, 0.75) 75%, rgba(233, 251, 255, 0.05));
+  z-index: 2;
+}
+.hero-video .hero-video-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.hero-video .hero-content-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-video .hero-content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translate(400px, 400px);
+  animation: heroReveal 0.35s ease-out forwards;
+  animation-delay: 1.8s;
+}
+.hero-video .hero-content .hero-heading {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.hero-video .hero-content .hero-paragraph {
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  color: #fff;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+.hero-video .hero-content .hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.hero-video .hero-content .hero-buttons a {
+  padding: 0.85rem 1.75rem;
+  border-radius: 4px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@keyframes heroReveal {
+  0% {
+    opacity: 0;
+    transform: translate(400px, 400px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
