@@ -18,7 +18,7 @@ export default function save({ attributes }) {
               tagName="p"
               value={bodyText} 
           />
-          <div class="icons swiper-mobile">
+          <div class="icons swiper swiper-mobile">
             <div class="swiper-wrapper">
               {items.map((item, index) => (
                   <div key={index} class="icon-item swiper-slide">

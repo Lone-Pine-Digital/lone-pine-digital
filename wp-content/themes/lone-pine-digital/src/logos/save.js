@@ -9,10 +9,10 @@ export default function save({ attributes }) {
 
     return (
         <section {...blockProps} data-count={images.length}>
-            <div className="container full-width">
+            <div className="container full-width fade-in-up">
                 {heading?.length > 0 && (
                     <RichText.Content
-                        className="section-heading fade-in-up"
+                        className="section-heading"
                         tagName="h2"
                         value={heading}
                     />
@@ -27,7 +27,7 @@ export default function save({ attributes }) {
                                 alt={img.alt}
                                 height={img.height}
                                 width={img.width}
-                                loading="eager" />
+                                loading="lazy" />
                             </div>
                         ))}
                     </div>
