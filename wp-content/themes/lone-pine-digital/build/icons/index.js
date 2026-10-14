@@ -198,7 +198,7 @@ function save({
         tagName: "p",
         value: bodyText
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-        class: "icons swiper-mobile",
+        class: "icons swiper swiper-mobile",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
           class: "swiper-wrapper",
           children: items.map((item, index) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {

@@ -29,8 +29,8 @@ add_action('wp_enqueue_scripts', function() {
     );
 
     // Swiper
-    wp_enqueue_style('swiper', 'https://unpkg.com/swiper/swiper-bundle.min.css');
-    wp_enqueue_script('swiper', 'https://unpkg.com/swiper/swiper-bundle.min.js', [], null, true);
+    //wp_enqueue_style('swiper', '/wp-content/themes/lone-pine-digital/assets/css/swiper-bundle.min.css');
+    //wp_enqueue_script('swiper', '/wp-content/themes/lone-pine-digital/assets/js/swiper-bundle.min.js', [], null, true);
 
     // Disable default block styles
     wp_dequeue_style('wp-block-library');

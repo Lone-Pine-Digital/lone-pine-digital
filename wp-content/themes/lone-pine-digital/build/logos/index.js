@@ -162,9 +162,9 @@ function save({
     ...blockProps,
     "data-count": images.length,
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-      className: "container full-width",
+      className: "container full-width fade-in-up",
       children: [heading?.length > 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.RichText.Content, {
-        className: "section-heading fade-in-up",
+        className: "section-heading",
         tagName: "h2",
         value: heading
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
@@ -179,7 +179,7 @@ function save({
               alt: img.alt,
               height: img.height,
               width: img.width,
-              loading: "eager"
+              loading: "lazy"
             })
           }, img.id))
         })

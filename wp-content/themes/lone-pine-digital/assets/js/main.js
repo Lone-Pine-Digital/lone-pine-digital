@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", () => {
     // Simple scroll-trigger animation observer
     const animatedElements = document.querySelectorAll("[class*='fade-in']");
@@ -138,27 +137,4 @@ jQuery(function ($) {
     });
 
 
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  if (window.innerWidth <= 767) {
-    const sliders = document.querySelectorAll(".swiper-mobile");
-
-    sliders.forEach((slider) => {
-
-        console.log("Sliders found:", sliders.length);
-
-        new Swiper(slider, {
-            a11y: true,
-            slidesPerView: 1,
-            spaceBetween: 48,
-            navigation: {
-                prevEl: slider.querySelector(".swiper-button-prev"),
-                nextEl: slider.querySelector(".swiper-button-next")
-            }
-        });
-
-        console.log(`Swiper instance ${i}:`, swiper, slider.swiper);
-    });
-  }
 });
