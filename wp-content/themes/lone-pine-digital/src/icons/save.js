@@ -19,7 +19,7 @@ export default function save({ attributes }) {
               value={bodyText} 
           />
           <div class="icons swiper swiper-mobile">
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper fade-in-up">
               {items.map((item, index) => (
                   <div key={index} class="icon-item swiper-slide">
                     <div class='icon-item-icon'>

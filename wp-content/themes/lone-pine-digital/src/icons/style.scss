@@ -3,6 +3,11 @@
 
 .icons-section {
     margin: 0;
+    .container {
+        @media screen and (max-width: 767px) {
+            padding-bottom: 3rem;
+        }
+    }
     .section-body {
         text-align: center;
         margin: 0 auto;
@@ -11,11 +16,11 @@
         }
     }
     .icons {
-        //display: flex;
-        //flex-wrap: wrap;
+        display: flex;
+        flex-wrap: wrap;
         text-align: center;
-        //justify-content: center;
-        //align-items: center;
+        justify-content: center;
+        align-items: center;
         margin: 2rem 0 0;
         @media screen and (min-width: 1024px) {
             margin: 4rem 0 0;

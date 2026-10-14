@@ -1163,6 +1163,11 @@
 .icons-section {
   margin: 0;
 }
+@media screen and (max-width: 767px) {
+  .icons-section .container {
+    padding-bottom: 3rem;
+  }
+}
 .icons-section .section-body {
   text-align: center;
   margin: 0 auto;
@@ -1173,7 +1178,11 @@
   }
 }
 .icons-section .icons {
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
+  justify-content: center;
+  align-items: center;
   margin: 2rem 0 0;
 }
 @media screen and (min-width: 1024px) {

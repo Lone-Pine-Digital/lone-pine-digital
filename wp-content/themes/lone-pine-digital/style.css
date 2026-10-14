@@ -275,7 +275,7 @@ img {
 /*** SWIPER ***/
 .swiper-buttons-wrapper {
     position: relative;
-    margin: 2rem auto 0;
+    margin: 1rem auto;
     display: flex;
 
     .swiper-button-prev, .swiper-button-next {
@@ -793,20 +793,20 @@ img {
     display: none !important;
 }
 
-/***.wp-site-blocks, .wp-block-group {
+.wp-site-blocks, .wp-block-group {
     padding: 0 !important;
     margin: 0 !important;
     max-width: none !important;
     width: 100% !important;
     display: block !important;
-}***/
+}
 
-/***.wp-site-blocks {
+.wp-site-blocks {
     @media screen and (min-width: 768px) {
         display: grid !important;
         grid-template-rows: auto 1fr auto;
     }
-}***/
+}
 
 :root :where(.is-layout-constrained) > * {
     margin-block-start: 0;

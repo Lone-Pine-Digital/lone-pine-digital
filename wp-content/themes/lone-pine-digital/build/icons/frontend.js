@@ -2,18 +2,6 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./node_modules/swiper/swiper-bundle.css"
-/*!***********************************************!*\
-  !*** ./node_modules/swiper/swiper-bundle.css ***!
-  \***********************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ },
-
 /***/ "./node_modules/swiper/modules/a11y.mjs"
 /*!**********************************************!*\
   !*** ./node_modules/swiper/modules/a11y.mjs ***!
@@ -10594,8 +10582,6 @@ let __webpack_exports__ = {};
   \*******************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var swiper_bundle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper/bundle */ "./node_modules/swiper/swiper-bundle.mjs");
-/* harmony import */ var swiper_css_bundle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper/css/bundle */ "./node_modules/swiper/swiper-bundle.css");
-
 
 document.addEventListener("DOMContentLoaded", () => {
   if (window.innerWidth <= 767) {
