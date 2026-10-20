@@ -10583,17 +10583,16 @@ let __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var swiper_bundle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper/bundle */ "./node_modules/swiper/swiper-bundle.mjs");
 
-window.addEventListener('load', () => {
+document.addEventListener('DOMContentLoaded', () => {
   const swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper-logo', {
     loop: true,
     slidesPerView: 'auto',
     spaceBetween: 32,
-    speed: 12000,
+    speed: 10000,
     freeMode: true,
     freeModeMomentum: false,
     autoplay: {
-      delay: 0,
-      disableOnInteraction: false
+      delay: 0
     },
     breakpoints: {
       768: {

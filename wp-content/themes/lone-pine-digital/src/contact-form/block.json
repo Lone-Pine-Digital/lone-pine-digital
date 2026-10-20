@@ -11,7 +11,7 @@
   "attributes": {
     "scheme": {
       "type": "string",
-      "default": "white"
+      "default": "eggshell"
     },
     "formId": {
       "type": "number",

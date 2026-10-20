@@ -1,36 +1,58 @@
 import { useBlockProps, RichText } from '@wordpress/block-editor';
 
 export default function save({ attributes }) {
-    const { heading, testimonials, scheme} = attributes;
+  const { items, scheme, heading, bodyText } = attributes;
 
-    const blockProps = useBlockProps.save({
-        className: `testimonials ${scheme}`
-    });
+  return (
+    <section {...useBlockProps.save({ className: `test-section ${scheme}` })}>
+        <div class="container">
 
-    return (
-        <section {...blockProps}>
-            <div className="container full-width">
-                {heading && <h2 className="section-heading">{heading}</h2>}
-                <div className="swiper swiper-testimonials">
-                    <div className="swiper-wrapper">
+          <RichText.Content
+              class="section-heading fade-in-up"
+              tagName="h2"
+              value={heading} 
+          />
 
-                        {testimonials.map((item, index) => (
-                            <div
-                                key={index}
-                                className="swiper-slide testimonial-item"
-                            >
-                            
-                                <RichText.Content
-                                    tagName="p"
-                                    className="testimonial-quote h5"
-                                    value={`"${item.quote}"`}
-                                />
-                            </div>
-                        ))}
-
+          <RichText.Content
+              class="section-body fade-in-up"
+              tagName="p"
+              value={bodyText} 
+          />
+          <div class="tests swiper swiper-test fade-in-up">
+            <div class="swiper-wrapper">
+              {items.map((item, index) => (
+                  <div key={index} class="test-item swiper-slide">
+                    <div class='test-item-icon'>
+                        <img src={item.icon} alt={item.title} loading="eager" />
                     </div>
-                </div>
+                    <RichText.Content
+                      tagName="h3"
+                      class="h4 test-item-title"
+                      value={item.title}
+                    />
+                    <RichText.Content
+                      tagName="p"
+                      class="test-item-content"
+                      value={item.text}
+                    />
+                  </div>
+              ))}
             </div>
-        </section>
-    );
+            <div class="swiper-buttons-wrapper">
+              <div class="swiper-button-prev">
+                <svg class="icon" width="56" height="32" title="Previous slide">
+                      <use href="/wp-content/themes/lone-pine-digital/assets/iconsprite.svg#arrowLeft"/>
+                  </svg>
+              </div>
+              <div class="swiper-button-next">
+                <svg class="icon" width="56" height="32" title="Next slide">
+                  <use href="/wp-content/themes/lone-pine-digital/assets/iconsprite.svg#arrowRight"/>
+                </svg>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+    </section>
+  );
 }

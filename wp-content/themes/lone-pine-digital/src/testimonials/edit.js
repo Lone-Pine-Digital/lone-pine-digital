@@ -1,34 +1,38 @@
 import {
     useBlockProps,
     RichText,
-    InspectorControls
+    InspectorControls,
+    MediaUploadCheck,
+    MediaUpload,
 } from '@wordpress/block-editor';
 
 import {
+    Button,
     PanelBody,
-    SelectControl,
-    Button
+    SelectControl
 } from '@wordpress/components';
 
 export default function Edit({ attributes, setAttributes }) {
-    const { testimonials, scheme } = attributes;
+    const { items = [], heading, scheme, bodyText } = attributes;
 
     const blockProps = useBlockProps({
-        className: `testimonial-block ${scheme}`,
+        className: `test ${scheme}`
     });
 
-
-    const updateTestimonial = (index, field, value) => {
-        const updated = [...testimonials];
-        updated[index][field] = value;
-        setAttributes({ testimonials: updated });
+    const updateItem = (index, field, value) => {
+        const newItems = [...items];
+        newItems[index] = {
+            ...newItems[index],
+            [field]: value
+        };
+        setAttributes({ items: newItems });
     };
 
-    const addTestimonial = () => {
+    const addItem = () => {
         setAttributes({
-            testimonials: [
-                ...testimonials,
-                { quote: ''}
+            items: [
+                ...items,
+                { title: '', text: '', icon: '' }
             ]
         });
     };
@@ -36,10 +40,9 @@ export default function Edit({ attributes, setAttributes }) {
     return (
         <>
             <InspectorControls>
-                {/* SCHEME PANEL */}
-                <PanelBody title="Colour Scheme" initialOpen={true}>
+                <PanelBody title="Icons Scheme" initialOpen={true}>
                     <SelectControl
-                        label="Scheme"
+                        label="Colour Scheme"
                         value={scheme}
                         options={[
                             { label: 'Eggshell', value: 'eggshell' },
@@ -49,46 +52,69 @@ export default function Edit({ attributes, setAttributes }) {
                         onChange={(value) => setAttributes({ scheme: value })}
                     />
                 </PanelBody>
+            </InspectorControls>
 
-                {/* TESTIMONIALS PANEL */}
-                <PanelBody title="Testimonials" initialOpen={true}>
-                    {testimonials.map((item, index) => (
-                        <div
-                            key={index}
-                            style={{
-                                marginBottom: '20px',
-                                paddingBottom: '20px',
-                                borderBottom: '1px solid #ddd'
-                            }}
-                        >
+            <div {...blockProps}>
+
+                <RichText
+                    tagName="h2"
+                    value={heading}
+                    onChange={(value) => setAttributes({ heading: value })}
+                    placeholder="Add section heading…"
+                />
+
+                <RichText
+                    tagName="p"
+                    value={bodyText}
+                    onChange={(value) => setAttributes({ bodyText: value })}
+                    placeholder="Add text…"
+                />
+
+                    {items.map((item, index) => (
+                        <div key={index} className="test-item">
+
+                            <MediaUploadCheck>
+                                <MediaUpload
+                                    onSelect={(media) => updateItem(index, 'icon', media.url)}
+                                    allowedTypes={['image']}
+                                    render={({ open }) => (
+                                        <Button onClick={open} variant="primary">
+                                            {item.icon ? 'Change Image' : 'Select Image'}
+                                        </Button>
+                                    )}
+                                />
+                            </MediaUploadCheck>
+            
+                            {item.icon && <img src={item.icon} alt="" />}
 
                             <RichText
-                                tagName="h5"
-                                placeholder="Testimonial quote…"
-                                value={item.quote}
+                                tagName="h3"
+                                className="h4 test-item-title"
+                                value={item.title}
                                 onChange={(value) =>
-                                    updateTestimonial(index, 'quote', value)
+                                    updateItem(index, 'title', value)
                                 }
+                                placeholder="Test item title…"
+                            />
+
+                            <RichText
+                                tagName="p"
+                                className="test-item-content"
+                                value={item.text}
+                                onChange={(value) =>
+                                    updateItem(index, 'text', value)
+                                }
+                                placeholder="Test item text…"
                             />
                         </div>
                     ))}
 
-                    <Button variant="primary" onClick={addTestimonial}>
-                        Add Testimonial
-                    </Button>
-                </PanelBody>
-            </InspectorControls>
-
-            {/* EDITOR PREVIEW */}
-            <div {...blockProps}>
-
-                <h3>Testimonials Preview</h3>
-
-                {testimonials.map((item, index) => (
-                    <div key={index} className="testimonial-preview">
-                        <p>{item.quote}</p>
-                    </div>
-                ))}
+                <Button
+                    variant="primary"
+                    onClick={addItem}
+                >
+                    Add Item
+                </Button>
             </div>
         </>
     );
