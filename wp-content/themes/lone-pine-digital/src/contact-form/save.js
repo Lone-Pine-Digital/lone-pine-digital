@@ -10,24 +10,27 @@ export default function save({ attributes }) {
     return (
         <section id="contactForm" {...blockProps}>
             <div className="container">
-                <RichText.Content
-                    className="section-heading fade-in-up"
-                    tagName="h2"
-                    value={heading}
-                />
-
-                <RichText.Content
-                    className="section-body fade-in-up"
-                    tagName="p"
-                    value={text}
-                />
-
-                <div className="fade-in-up">
-                    {formId
-                        ? `[wpforms id="${formId}"]`
-                        : 'No form selected'
-                    }
+                <div class="left">
+                    <RichText.Content
+                        className="section-heading fade-in-up"
+                        tagName="h2"
+                        value={heading}
+                    />
+    
+                    <RichText.Content
+                        className="section-body fade-in-up"
+                        tagName="p"
+                        value={text}
+                    />
+    
+                    <div className="fade-in-up">
+                        {formId
+                            ? `[wpforms id="${formId}"]`
+                            : 'No form selected'
+                        }
+                    </div>
                 </div>
+                <div class="right"></div>
             </div>
         </section>
     );

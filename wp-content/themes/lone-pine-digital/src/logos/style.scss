@@ -1,3 +1,6 @@
+@import "swiper/css";
+@import "swiper/css/bundle";
+
 .logos-slider {
     margin: 0 auto;
     padding: 30px 0;
@@ -11,22 +14,19 @@
         }
     }
     .swiper-logo {
+        width: 100%;
+        pointer-events: none;
         .swiper-wrapper {
-            display: flex;
-            justify-content: center;
-            min-width: 0;
+            transition-timing-function: linear !important;
         }
         .swiper-slide {
-            width: 120px;
+            width: auto;
             height: auto;
             display: flex;
             flex: 0 0 auto;
             flex-shrink: 0;
             align-items: center;
             box-sizing: border-box;
-            @media screen and (min-width: 768px) {
-                width: 150px;
-            }
         }
 
         img.logo {

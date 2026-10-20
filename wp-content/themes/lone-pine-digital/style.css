@@ -166,7 +166,7 @@ section {
 
 /*** CONTAINER ***/
 .container {
-    max-width: 90%;
+    max-width: 90dvw;
     margin: 0 auto;
     padding: 4rem 0;
 
@@ -183,7 +183,7 @@ section {
     }
 
     &.full-width {
-        max-width: 100%;
+        max-width: 100dvw;
         width: 100%;
         margin: 0;
         padding: 0;

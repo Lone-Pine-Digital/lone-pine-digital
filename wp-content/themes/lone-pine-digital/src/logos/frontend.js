@@ -1,16 +1,16 @@
 import Swiper from 'swiper/bundle';
 
-window.addEventListener('load', () => {
+document.addEventListener('DOMContentLoaded', () => {
+
     const swiper = new Swiper('.swiper-logo', {
         loop: true,
         slidesPerView: 'auto',
         spaceBetween: 32,
-        speed: 12000,
+        speed: 10000,
         freeMode: true,
         freeModeMomentum: false,
         autoplay: {
             delay: 0,
-            disableOnInteraction: false,
         },
         breakpoints: {
             768: { spaceBetween: 64 }

@@ -56,14 +56,14 @@ function Edit({
           label: "Colour Scheme",
           value: scheme,
           options: [{
-            label: 'White',
-            value: 'white'
+            label: 'Eggshell',
+            value: 'eggshell'
           }, {
-            label: 'Dark',
-            value: 'dark'
+            label: 'Evergreen',
+            value: 'evergreen'
           }, {
-            label: 'Blue',
-            value: 'blue'
+            label: 'Celadon',
+            value: 'celadon'
           }],
           onChange: value => setAttributes({
             scheme: value
@@ -168,17 +168,22 @@ function save({
     ...blockProps,
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
       className: "container",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.RichText.Content, {
-        className: "section-heading fade-in-up",
-        tagName: "h2",
-        value: heading
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.RichText.Content, {
-        className: "section-body fade-in-up",
-        tagName: "p",
-        value: text
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        class: "left",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.RichText.Content, {
+          className: "section-heading fade-in-up",
+          tagName: "h2",
+          value: heading
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.RichText.Content, {
+          className: "section-body fade-in-up",
+          tagName: "p",
+          value: text
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+          className: "fade-in-up",
+          children: formId ? `[wpforms id="${formId}"]` : 'No form selected'
+        })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-        className: "fade-in-up",
-        children: formId ? `[wpforms id="${formId}"]` : 'No form selected'
+        class: "right"
       })]
     })
   });
