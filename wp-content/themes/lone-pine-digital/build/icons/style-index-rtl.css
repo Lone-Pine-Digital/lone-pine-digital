@@ -1185,11 +1185,6 @@
   align-items: center;
   margin: 2rem 0 0;
 }
-@media screen and (min-width: 1024px) {
-  .icons-section .icons {
-    margin: 0;
-  }
-}
 .icons-section .icons .icon-item {
   width: 100%;
   margin-bottom: 1.5rem;
