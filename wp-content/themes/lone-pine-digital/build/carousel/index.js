@@ -297,7 +297,7 @@ function save({
                     target: '_blank',
                     rel: 'noopener noreferrer'
                   }),
-                  children: "Find out more"
+                  children: "Read more"
                 })]
               })
             })
