@@ -19,11 +19,9 @@ export default function save({ attributes }) {
                 value={bodyText} 
             />
             <div className="list">
-              <div class="list-progress-line"></div>
               {items.map((item, index) => (
                   <div key={index} className="list-item">
-                    <div className='list-item-indicator'></div>
-                    <p className="h4 list-item-number fade-in-up">{index + 1}</p>
+                    <span className="h2 list-item-number fade-in-up">{index + 1}</span>
                     <RichText.Content
                       tagName="h3"
                       className="h4 list-item-title fade-in-up"

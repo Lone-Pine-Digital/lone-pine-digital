@@ -16,7 +16,7 @@ export default function Edit({ attributes, setAttributes }) {
     const { items = [], heading, scheme, bodyText } = attributes;
 
     const blockProps = useBlockProps({
-        className: `test ${scheme}`
+        className: `testimonials ${scheme}`
     });
 
     const updateItem = (index, field, value) => {
@@ -40,7 +40,7 @@ export default function Edit({ attributes, setAttributes }) {
     return (
         <>
             <InspectorControls>
-                <PanelBody title="Icons Scheme" initialOpen={true}>
+                <PanelBody title="Testimonials Scheme" initialOpen={true}>
                     <SelectControl
                         label="Colour Scheme"
                         value={scheme}
@@ -71,7 +71,7 @@ export default function Edit({ attributes, setAttributes }) {
                 />
 
                     {items.map((item, index) => (
-                        <div key={index} className="test-item">
+                        <div key={index} className="testimonial-item">
 
                             <MediaUploadCheck>
                                 <MediaUpload
@@ -89,22 +89,22 @@ export default function Edit({ attributes, setAttributes }) {
 
                             <RichText
                                 tagName="h3"
-                                className="h4 test-item-title"
+                                className="h4 testimonial-item-title"
                                 value={item.title}
                                 onChange={(value) =>
                                     updateItem(index, 'title', value)
                                 }
-                                placeholder="Test item title…"
+                                placeholder="Testimonial item title…"
                             />
 
                             <RichText
                                 tagName="p"
-                                className="test-item-content"
+                                className="testimonial-item-content"
                                 value={item.text}
                                 onChange={(value) =>
                                     updateItem(index, 'text', value)
                                 }
-                                placeholder="Test item text…"
+                                placeholder="Testimonial item text…"
                             />
                         </div>
                     ))}

@@ -167,23 +167,20 @@ function save({
     id: "contactForm",
     ...blockProps,
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-      className: "container",
+      className: "container full-width",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-        class: "left",
+        class: "left fade-in-left",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.RichText.Content, {
-          className: "section-heading fade-in-up",
+          className: "section-heading",
           tagName: "h2",
           value: heading
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.RichText.Content, {
-          className: "section-body fade-in-up",
+          className: "section-body",
           tagName: "p",
           value: text
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-          className: "fade-in-up",
-          children: formId ? `[wpforms id="${formId}"]` : 'No form selected'
-        })]
+        }), formId ? `[wpforms id="${formId}"]` : 'No form selected']
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-        class: "right"
+        class: "right fade-in-right"
       })]
     })
   });
