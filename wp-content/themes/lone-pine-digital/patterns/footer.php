@@ -26,16 +26,16 @@
                 <li><a href="/services">Services</a></li>
                 <li><a href="/clients">Clients</a></li>
                 <li><a href="/frequently-asked-questions">FAQs</a></li>
-                <li><a href="/website-preview">Website Preview Tool</a></li>
+                <!--<li><a href="/website-preview">Website Preview Tool</a></li>-->
                 <li><a href="/contact">Contact</a></li>
             </ul>
 
             <div class="contact-wrapper">
-                <a href="tel:07541836297">
+                <a href="tel:07938420233">
                     <svg class="icon" width="24" height="24" title="Call Us">
                         <use href="/wp-content/themes/lone-pine-digital/assets/iconsprite.svg#phone"/>
                     </svg>
-                    07541 836297
+                    07938 420233
                 </a>
 
                 <a href="mailto:info@lonepinedigital.co.uk">
@@ -68,7 +68,7 @@
                         <use href="/wp-content/themes/lone-pine-digital/assets/iconsprite.svg#instagram"/>
                     </svg>
                 </a>
-                <a href="https://www.linkedin.com/lonepinedigital" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/company/lone-pine-digital/" target="_blank" rel="noopener noreferrer">
                     <svg class="icon" width="24" height="24" title="Follow Us on LinkedIn">
                         <use href="/wp-content/themes/lone-pine-digital/assets/iconsprite.svg#linkedin"/>
                     </svg>
