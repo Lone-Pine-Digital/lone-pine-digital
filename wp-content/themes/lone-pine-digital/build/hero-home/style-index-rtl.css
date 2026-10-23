@@ -1,0 +1,71 @@
+/*!*************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/hero-home/style.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************/
+.hero-home {
+  margin: 0 auto;
+  background: var(--wp--preset--color--evergreen);
+  min-height: calc(100dvh - 75px);
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .hero-home {
+    min-height: calc(100dvh - 100px);
+  }
+}
+.hero-home .container {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+@media screen and (max-width: 1199px) {
+  .hero-home .container {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .hero-home .container .text-wrapper {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+}
+.hero-home .container .hero-heading {
+  text-align: center;
+  margin: 0;
+  font-size: var(--wp--preset--font-size--64);
+  padding: 2rem 0;
+}
+@media screen and (min-width: 1200px) {
+  .hero-home .container .hero-heading {
+    text-align: right;
+    padding: 0;
+    font-size: var(--wp--preset--font-size--72);
+  }
+}
+.hero-home .container .hero-text {
+  text-align: center;
+  font-size: var(--wp--preset--font-size--20);
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 1200px) {
+  .hero-home .container .hero-text {
+    text-align: right;
+  }
+}
+.hero-home .container .btn {
+  display: inline-block;
+}
+.hero-home .container .btn:first-child {
+  margin-left: 2rem;
+}
+.hero-home .container img {
+  max-width: 95dvw;
+  max-height: 50dvh;
+  width: auto;
+}
+@media screen and (min-width: 1200px) {
+  .hero-home .container img {
+    max-height: 80dvh;
+    width: auto;
+  }
+}

@@ -1,0 +1,1 @@
+{"version":3,"file":"numbered-list/index.css","mappings":";;;AAAA;EACI;EACA;EACA;AACJ,C","sources":["webpack://lone-pine-digital/./src/numbered-list/editor.scss"],"sourcesContent":[".numbered-list-editor img.numbered-list-image-preview {\r\n    max-width: 100%;\r\n    margin-top: 20px;\r\n    display: block;\r\n}"],"names":[],"sourceRoot":""}

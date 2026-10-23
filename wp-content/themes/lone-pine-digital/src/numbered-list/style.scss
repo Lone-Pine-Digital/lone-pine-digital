@@ -1,0 +1,71 @@
+.numbered-list {
+    margin: 0;
+    .section-body {
+        text-align: center;
+        margin: 0 auto;
+        @media screen and (min-width: 1024px) {
+            max-width: 60%;
+        }
+    }
+    &.evergreen, &.eggshell {
+        .list-item-number {
+            color: var(--wp--preset--color--celadon);
+        }
+    }
+    &.celadon {
+        .list-item-number {
+            color: var(--wp--preset--color--eggshell);
+        }
+    }
+    .list {
+        padding: 0;
+        margin: 48px auto 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        position: relative;
+        justify-content: center;
+        @media screen and (min-width: 1024px) {
+            margin: 64px auto 0;
+            width: max-content;
+            max-width: 100%;
+        }
+        &-item {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-template-rows: auto auto;
+            grid-gap: 1rem;
+            margin: 0 1rem;
+            position: relative;
+            padding-bottom: 3rem;
+            width: max-content;
+            @media screen and (min-width: 768px) {
+                max-width: calc(50% - 2rem);
+            }
+            @media screen and (min-width: 1024px) {
+                padding-bottom: 4rem;
+                max-width: calc(25% - 2rem);
+            }
+              
+            &-number {
+                line-height: 1;
+                grid-row: 1/3;
+                &::after {
+                    content: ".";
+                    display: inline;
+                }
+            }
+            &-number, &-title {
+                margin: 0;
+            }
+            &-title {
+                grid-column: 2;
+                grid-row: 1;
+            }
+            &-content {
+                margin: 0;
+                grid-column: 2;
+            }
+        }
+    }
+}

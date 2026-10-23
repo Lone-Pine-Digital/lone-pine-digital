@@ -1,0 +1,59 @@
+{
+  "apiVersion": 3,
+  "name": "lone-pine-digital/text-with-image",
+  "title": "Lone Pine Digital - Text With Image",
+  "category": "design",
+  "icon": "format-image",
+  "description": "A block for displaying text alongside an image.",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "attributes": {
+        "scheme": {
+          "type": "string",
+          "default": "eggshell"
+        },
+        "imageSide": {
+          "type": "string",
+          "default": "img-left"
+        },
+        "imageUrl": {
+          "type": "string",
+          "default": "../../assets/images/4-3-placeholder.jpg"
+        },
+        "hasBubble": {
+          "type": "string",
+          "default": ""
+        },
+        "heading": {
+          "type": "string",
+          "source": "html",
+          "selector": "h2",
+          "default": "Text With Image Heading"
+        },
+        "body": {
+          "type": "string",
+          "source": "html",
+          "selector": "p",
+          "default": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos."
+        },
+        "buttonText": {
+          "type": "string",
+          "default": "Click Me"
+        },
+        "buttonUrl": {
+          "type": "string",
+          "default": "#"
+        },
+        "buttonPageId": {
+          "type": "number",
+          "default": 0
+        }
+      },
+      "supports": {
+          "spacing": false,
+          "align": false,
+          "typography": false,
+          "color": false
+      }
+}   

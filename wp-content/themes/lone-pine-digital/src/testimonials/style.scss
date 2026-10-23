@@ -1,0 +1,57 @@
+@import "swiper/css/bundle";
+
+.testimonials-section {
+    margin: 0;
+
+    .container {
+        @media (max-width: 767px) {
+            padding-bottom: 3rem;
+        }
+    }
+
+    .section-body {
+        text-align: center;
+        margin: 0 auto;
+
+        @media (min-width: 1024px) {
+            max-width: 60%;
+        }
+    }
+
+    .testimonials {
+        align-items: center;
+        margin: 2rem 0 0;
+
+        @media (min-width: 1024px) {
+            margin: 0;
+        }
+
+        .testimonial-item {
+            margin-bottom: 1.5rem;
+
+            @media (min-width: 1024px) {
+                margin-bottom: 2.5rem;
+            }
+
+            .testimonial-item-icon {
+                width: 100px;
+                height: 100px;
+                margin: 0 auto 1.5rem;
+
+                @media (min-width: 1024px) {
+                    width: 75px;
+                    height: 75px;
+                }
+
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+
+            .testimonial-item-title {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}

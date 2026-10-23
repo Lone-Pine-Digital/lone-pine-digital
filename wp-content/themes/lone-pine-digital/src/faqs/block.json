@@ -1,0 +1,48 @@
+{
+  "apiVersion": 3,
+  "name": "lone-pine-digital/faqs",
+  "title": "Lone Pine Digital - FAQs",
+  "category": "widgets",
+  "icon": "status",
+  "description": "FAQs block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./frontend.js",
+  "attributes": {
+        "scheme": {
+          "type": "string",
+          "default": "eggshell"
+        },
+        "heading": {
+          "type": "string",
+          "source": "html",
+          "selector": "h2",
+          "default": "FAQs Heading"
+        },
+        "faqs": {
+          "type": "array",
+          "source": "query",
+          "selector": "div.faq-list > div.faq",
+          "default": [],
+          "query": {
+            "question": {
+              "type": "string",
+              "source": "html",
+              "selector": "h3"
+            },
+            "answer": {
+              "type": "string",
+              "source": "html",
+              "selector": "p.faq-answer"
+            }
+          }
+        }
+      },
+      "supports": {
+          "spacing": false,
+          "align": false,
+          "typography": false,
+          "color": false
+      }
+}   

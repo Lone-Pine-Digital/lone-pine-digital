@@ -1,0 +1,1 @@
+{"version":3,"file":"hero-simple/index.css","mappings":";;;AAAA;EACI;EACA;EACA;AACJ,C","sources":["webpack://lone-pine-digital/./src/hero-simple/editor.scss"],"sourcesContent":[".hero-simple-editor img.hero-simple-image-preview {\r\n    max-width: 100%;\r\n    margin-top: 20px;\r\n    display: block;\r\n}"],"names":[],"sourceRoot":""}

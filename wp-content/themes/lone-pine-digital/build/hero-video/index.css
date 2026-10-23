@@ -1,0 +1,13 @@
+/*!***************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/hero-video/editor.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************/
+.block-editor-block-list__block .wp-block-lone-pine-digital-hero-home {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1.5rem;
+}
+.block-editor-block-list__block .wp-block-lone-pine-digital-hero-home .block-editor-rich-text__editable {
+  font-size: var(--wp--preset--font-size--18);
+}
+
+/*# sourceMappingURL=index.css.map*/
