@@ -2,6 +2,7 @@
   "apiVersion": 3,
   "name": "lone-pine-digital/contact-form",
   "title": "Lone Pine Digital - Contact Form",
+  "version": "0.1.1",
   "category": "widgets",
   "icon": "email",
   "description": "A block to add a WPForm using a dropdown selector.",

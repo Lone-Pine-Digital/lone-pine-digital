@@ -1,7 +1,7 @@
 import Swiper from 'swiper/bundle';
 
 document.addEventListener("DOMContentLoaded", () => {
-    const sliders = document.querySelectorAll(".swiper");
+    const sliders = document.querySelectorAll(".swiper-testimonials");
 
     sliders.forEach((slider) => {
         new Swiper(slider, {
@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
             slidesPerView: 1,
             spaceBetween: 48,
             centerInsufficientSlides: true,
-            pagination: {
+            /*pagination: {
                 el: slider.querySelector(".swiper-pagination"),
                 clickable: true,
                 renderBullet(index, className) {
@@ -26,13 +26,11 @@ document.addEventListener("DOMContentLoaded", () => {
                     `;
                     return `<span class="${className}">${svg}</span>`;
                 }
-            },
-
+            },*/
             navigation: {
                 prevEl: slider.querySelector(".swiper-button-prev"),
                 nextEl: slider.querySelector(".swiper-button-next")
             },
-
             breakpoints: {
                 768: { slidesPerView: 2 },
                 1200: { slidesPerView: 4 }

@@ -7,117 +7,49 @@
             max-width: 60%;
         }
     }
-    &.dark, &.blue {
-        .list-item::before {
-            border-color: var(--wp--preset--color--white);
-        }
+    &.evergreen, &.eggshell {
         .list-item-number {
-            color: var(--wp--preset--color--white);
-        }
-        .list-item-indicator {
-            border-color: var(--wp--preset--color--white);
-        }
-        .list-progress-line {
-            background-color: var(--wp--preset--color--white);
+            color: var(--wp--preset--color--celadon);
         }
     }
-    &.dark {
-        .list-item-indicator {
-            background-color: var(--wp--preset--color--primary);
-            &.active {
-                background-color: var(--wp--preset--color--secondary);
-            }
-        }
-    }
-    &.blue {
-        .list-item-indicator {
-            background-color: var(--wp--preset--color--secondary);
-            &.active {
-                background-color: var(--wp--preset--color--primary);
-            }
-        }
-    }
-    &.white {
-        .list-item::before {
-            border-color: var(--wp--preset--color--primary);
-        }
+    &.celadon {
         .list-item-number {
-            color: var(--wp--preset--color--primary);
-        }
-        .list-item-indicator {
-            border-color: var(--wp--preset--color--primary);
-            background-color: var(--wp--preset--color--white);
-            &.active {
-                background-color: var(--wp--preset--color--secondary);
-            }
-        }
-        .list-progress-line {
-            background-color: var(--wp--preset--color--primary);
+            color: var(--wp--preset--color--eggshell);
         }
     }
     .list {
         padding: 0;
-        margin: 30px auto 0;
-        display: grid;
-        grid-template-columns: auto;
+        margin: 48px auto 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         position: relative;
+        justify-content: center;
         @media screen and (min-width: 1024px) {
-            margin: 60px auto 0;
+            margin: 64px auto 0;
             width: max-content;
-        }
-        &-progress-line {
-            position: absolute;
-            left: 9px;
-            top: 0;
-            width: 3px;
-            height: 0;
-            transform-origin: top;
-            transition: height 0.1s linear;
-            z-index: 1;
+            max-width: 100%;
         }
         &-item {
             display: grid;
-            grid-template-columns: auto auto 1fr;
+            grid-template-columns: auto 1fr;
             grid-template-rows: auto auto;
             grid-gap: 1rem;
-            padding-bottom: 2rem;
+            margin: 0 1rem;
             position: relative;
+            padding-bottom: 3rem;
+            width: max-content;
+            @media screen and (min-width: 768px) {
+                max-width: calc(50% - 2rem);
+            }
             @media screen and (min-width: 1024px) {
-                max-width: 600px;
                 padding-bottom: 4rem;
+                max-width: calc(25% - 2rem);
             }
-            &::before {
-                content: "";
-                display: block;
-                position: absolute;
-                left: 9px;
-                top: 0;
-                width: 3px;
-                height: 100%;
-                border-left-width: 3px;
-                border-left-style: dashed;
-                z-index: 0;
-            }
-            &:last-child {
-                padding-bottom: 0;
-                /*&::before {
-                    display: none;
-                }*/
-            }
-            &-indicator {
-                width: 20px;
-                height: 20px;
-                border-radius: 50%;
-                border-width: 3px;
-                border-style: solid;
-                grid-column: 1/2;
-                z-index: 1;
-                transition: all 0.3s ease;
-            }
+              
             &-number {
                 line-height: 1;
-                font-weight: 600;
-                grid-column: 2/3;
+                grid-row: 1/3;
                 &::after {
                     content: ".";
                     display: inline;
@@ -126,9 +58,13 @@
             &-number, &-title {
                 margin: 0;
             }
+            &-title {
+                grid-column: 2;
+                grid-row: 1;
+            }
             &-content {
                 margin: 0;
-                grid-column: 2/4;
+                grid-column: 2;
             }
         }
     }

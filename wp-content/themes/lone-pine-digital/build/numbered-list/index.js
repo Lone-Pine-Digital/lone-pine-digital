@@ -61,14 +61,14 @@ function Edit({
           label: "Colour Scheme",
           value: scheme,
           options: [{
-            label: 'White',
-            value: 'white'
+            label: 'Eggshell',
+            value: 'eggshell'
           }, {
-            label: 'Dark',
-            value: 'dark'
+            label: 'Evergreen',
+            value: 'evergreen'
           }, {
-            label: 'Blue',
-            value: 'blue'
+            label: 'Celadon',
+            value: 'celadon'
           }],
           onChange: value => setAttributes({
             scheme: value
@@ -186,16 +186,12 @@ function save({
         className: "section-body fade-in-up",
         tagName: "p",
         value: bodyText
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
         className: "list",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-          class: "list-progress-line"
-        }), items.map((item, index) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+        children: items.map((item, index) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
           className: "list-item",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-            className: "list-item-indicator"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
-            className: "h4 list-item-number fade-in-up",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+            className: "h2 list-item-number fade-in-up",
             children: index + 1
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.RichText.Content, {
             tagName: "h3",
@@ -206,7 +202,7 @@ function save({
             className: "list-item-content fade-in-up",
             value: item.text
           })]
-        }, index))]
+        }, index))
       })]
     })
   });

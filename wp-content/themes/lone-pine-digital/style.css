@@ -114,9 +114,10 @@ body {
 }
 
 /*** HEADINGS ***/
-.display, h1, h2, h3, h4, h5, h6 {
+.display, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     line-height: 1.1;
     margin: 0 0 1rem 0;
+    font-family: var(--wp--preset--font-family--jumps-winter);
     @media screen and (min-width: 768px) {
         margin: 0 0 1.5rem 0;
     }
@@ -168,14 +169,14 @@ section {
 .container {
     max-width: 90dvw;
     margin: 0 auto;
-    padding: 4rem 0;
+    padding: 3rem 0;
 
     @media screen and (min-width: 768px) {
-        padding: 6rem 2.5rem;
+        padding: 4rem 2.5rem;
     }
 
     @media screen and (min-width: 1024px) {
-        padding: 8rem 0;
+        padding: 6rem 0;
     }
 
     @media screen and (min-width: 1600px) {
@@ -204,13 +205,13 @@ a {
 .btn {
     width: max-content;
     text-align: center;
-    padding: .5rem 1.625rem;
+    padding: 1rem;
     transition: all .25s ease;
-    font-weight: 600;
     display: block;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100%;
+    font-family: var(--wp--preset--font-family--jumps-winter);
     &:hover {
         text-decoration: none;
     }
@@ -220,7 +221,7 @@ a {
         color: var(--wp--preset--color--eggshell);
         &:hover {
             color: var(--wp--preset--color--primary);
-            background-image: url('./assets/images/btn-primary-bg-hover.svg');
+            background-image: url('./assets/images/btn-secondary-bg.svg');
         }
     }
 
@@ -229,7 +230,7 @@ a {
         color: var(--wp--preset--color--evergreen);
         &:hover {
             color: var(--wp--preset--color--primary);
-            background-image: url('./assets/images/btn-secondary-bg-hover.svg');
+            background-image: url('./assets/images/btn-primary-bg.svg');
         }
     }
 }
@@ -237,17 +238,17 @@ a {
 
 /*** COLOUR SCHEMES ***/
 .eggshell {
-    background: var(--wp--preset--color--eggshell);
+    background-color: var(--wp--preset--color--eggshell);
     color: var(--wp--preset--color--evergreen);
 }
 
 .evergreen {
-    background: var(--wp--preset--color--evergreen);
+    background-color: var(--wp--preset--color--evergreen);
     color: var(--wp--preset--color--eggshell);
 }
 
 .celadon {
-    background: var(--wp--preset--color--celadon);
+    background-color: var(--wp--preset--color--celadon);
     color: var(--wp--preset--color--evergreen);
 }
 
@@ -277,11 +278,25 @@ img {
     position: relative;
     margin: 1rem auto;
     display: flex;
+    justify-content: end;
 
     .swiper-button-prev, .swiper-button-next {
         position: relative;
-        width: 8rem;
+        width: 5.25rem;
+        height: 4rem;
         margin-top: 0;
+        @media screen and (min-width: 768px) {
+            width: 7rem;
+            height: 4rem;
+        }
+    }
+
+    .swiper-button-prev {
+        margin-right: .5rem;
+    }
+
+    .swiper-button-next {
+        margin-left: .5rem;
     }
 }
 
@@ -357,7 +372,7 @@ img {
     position: fixed;
     z-index: 9999;
     margin: 0;
-    background: var(--wp--preset--color--evergreen);
+    background-color: var(--wp--preset--color--evergreen);
 
     @media screen and (min-width: 1024px) {
         height: 100px;
@@ -374,10 +389,10 @@ img {
     }
 
     &.scrolled {
-        background: var(--wp--preset--color--eggshell);
+        background-color: var(--wp--preset--color--eggshell);
         color: var(--wp--preset--color--evergreen);
         .mobile-menu {
-            background: var(--wp--preset--color--eggshell);
+            background-color: var(--wp--preset--color--eggshell);
         }
         .menu-item {
             &.active,
@@ -435,7 +450,7 @@ img {
         &:hover,
         &:focus {
             color: var(--wp--preset--color--evergreen);
-            background-image: url('./assets/images/btn-primary-bg-hover.svg');
+            background-image: url('./assets/images/btn-secondary-bg.svg');
             background-repeat: no-repeat;
             background-size: 100%;
             text-decoration: none;
@@ -450,7 +465,7 @@ img {
        MOBILE MENU
     -------------------------- */
     .mobile-menu {
-        background: var(--wp--preset--color--evergreen);
+        background-color: var(--wp--preset--color--evergreen);
         height: 100dvh;
         position: fixed;
         left: 0;
@@ -479,7 +494,7 @@ img {
                 &.active,
                 &:focus,
                 &.open {
-                    background: var(--wp--preset--color--evergreen);
+                    background-color: var(--wp--preset--color--evergreen);
                 }
 
                 .icon {
@@ -493,7 +508,7 @@ img {
             .dropdown-list {
                 list-style-type: none;
                 padding: .5rem 0;
-                background: var(--wp--preset--color--evergreen);
+                background-color: var(--wp--preset--color--evergreen);
                 display: none;
 
                 .dropdown-item {
@@ -503,7 +518,7 @@ img {
                     &.active,
                     &:hover,
                     &:focus {
-                        background-image: url('./assets/images/btn-primary-bg-hover.svg');
+                        background-image: url('./assets/images/btn-secondary-bg.svg');
                         background-repeat: no-repeat;
                         background-size: contain;
                     }
@@ -617,7 +632,7 @@ img {
                     .dropdown-list {
                         list-style-type: none;
                         padding: .5rem 0;
-                        background: var(--wp--preset--color--white);
+                        background-color: var(--wp--preset--color--eggshell);
                         width: max-content;
 
                         .dropdown-item {
@@ -758,7 +773,7 @@ img {
                 &:hover, &:focus {
                     text-decoration: none;
                     color: var(--wp--preset--color--evergreen);
-                    background: var(--wp--preset--color--eggshell);
+                    background-color: var(--wp--preset--color--eggshell);
                 }
             }
             .icon {

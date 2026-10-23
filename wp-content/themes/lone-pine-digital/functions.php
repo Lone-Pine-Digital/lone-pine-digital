@@ -75,6 +75,7 @@ function cjs_register_blocks() {
 
     
     register_block_type(__DIR__ . '/build/banner-image');
+    register_block_type(__DIR__ . '/build/carousel');
     register_block_type(__DIR__ . '/build/contact-form');
     register_block_type(__DIR__ . '/build/cta-banner');
     register_block_type(__DIR__ . '/build/faqs');

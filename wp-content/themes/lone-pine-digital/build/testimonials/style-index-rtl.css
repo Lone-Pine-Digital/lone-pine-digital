@@ -890,55 +890,55 @@
   }
 }
 
-.test-section {
+.testimonials-section {
   margin: 0;
 }
 @media (max-width: 767px) {
-  .test-section .container {
+  .testimonials-section .container {
     padding-bottom: 3rem;
   }
 }
-.test-section .section-body {
+.testimonials-section .section-body {
   text-align: center;
   margin: 0 auto;
 }
 @media (min-width: 1024px) {
-  .test-section .section-body {
+  .testimonials-section .section-body {
     max-width: 60%;
   }
 }
-.test-section .tests {
+.testimonials-section .testimonials {
   align-items: center;
   margin: 2rem 0 0;
 }
 @media (min-width: 1024px) {
-  .test-section .tests {
-    margin: 4rem 0 0;
+  .testimonials-section .testimonials {
+    margin: 0;
   }
 }
-.test-section .tests .test-item {
+.testimonials-section .testimonials .testimonial-item {
   margin-bottom: 1.5rem;
 }
 @media (min-width: 1024px) {
-  .test-section .tests .test-item {
+  .testimonials-section .testimonials .testimonial-item {
     margin-bottom: 2.5rem;
   }
 }
-.test-section .tests .test-item .test-item-icon {
+.testimonials-section .testimonials .testimonial-item .testimonial-item-icon {
   width: 100px;
   height: 100px;
   margin: 0 auto 1.5rem;
 }
 @media (min-width: 1024px) {
-  .test-section .tests .test-item .test-item-icon {
+  .testimonials-section .testimonials .testimonial-item .testimonial-item-icon {
     width: 75px;
     height: 75px;
   }
 }
-.test-section .tests .test-item .test-item-icon img {
+.testimonials-section .testimonials .testimonial-item .testimonial-item-icon img {
   max-width: 100%;
   max-height: 100%;
 }
-.test-section .tests .test-item .test-item-title {
+.testimonials-section .testimonials .testimonial-item .testimonial-item-title {
   margin-bottom: 1rem;
 }

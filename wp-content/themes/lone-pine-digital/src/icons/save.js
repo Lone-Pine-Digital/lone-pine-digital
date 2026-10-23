@@ -19,6 +19,18 @@ export default function save({ attributes }) {
               value={bodyText} 
           />
           <div class="icons swiper swiper-mobile">
+            <div class="swiper-buttons-wrapper">
+              <div class="swiper-button-prev">
+                <svg class="icon" width="56" height="32" title="Previous slide">
+                      <use href="/wp-content/themes/lone-pine-digital/assets/iconsprite.svg#arrowLeft"/>
+                  </svg>
+              </div>
+              <div class="swiper-button-next">
+                <svg class="icon" width="56" height="32" title="Next slide">
+                  <use href="/wp-content/themes/lone-pine-digital/assets/iconsprite.svg#arrowRight"/>
+                </svg>
+              </div>
+            </div>
             <div class="swiper-wrapper fade-in-up">
               {items.map((item, index) => (
                   <div key={index} class="icon-item swiper-slide">
@@ -37,18 +49,6 @@ export default function save({ attributes }) {
                     />
                   </div>
               ))}
-            </div>
-            <div class="swiper-buttons-wrapper">
-              <div class="swiper-button-prev">
-                <svg class="icon" width="56" height="32" title="Previous slide">
-                      <use href="/wp-content/themes/lone-pine-digital/assets/iconsprite.svg#arrowLeft"/>
-                  </svg>
-              </div>
-              <div class="swiper-button-next">
-                <svg class="icon" width="56" height="32" title="Next slide">
-                  <use href="/wp-content/themes/lone-pine-digital/assets/iconsprite.svg#arrowRight"/>
-                </svg>
-              </div>
             </div>
           </div>
         </div>
