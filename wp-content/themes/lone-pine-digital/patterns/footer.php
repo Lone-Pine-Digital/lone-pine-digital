@@ -22,7 +22,7 @@
             </div>
 
             <ul class="menu-wrapper">
-                <li><a href="/about">The Lone Pine Story</a></li>
+                <!--<li><a href="/about">The Lone Pine Story</a></li>-->
                 <li><a href="/services">Services</a></li>
                 <!--<li><a href="/clients">Clients</a></li>-->
                 <li><a href="/frequently-asked-questions">FAQs</a></li>
