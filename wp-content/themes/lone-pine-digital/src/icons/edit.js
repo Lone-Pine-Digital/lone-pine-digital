@@ -37,6 +37,12 @@ export default function Edit({ attributes, setAttributes }) {
         });
     };
 
+    const removeItem = (index) => {
+        setAttributes({
+            items: items.filter((_, i) => i !== index)
+        });
+    };
+
     return (
         <>
             <InspectorControls>
@@ -70,44 +76,52 @@ export default function Edit({ attributes, setAttributes }) {
                     placeholder="Add text…"
                 />
 
-                    {items.map((item, index) => (
-                        <div key={index} className="icon-item">
+                {items.map((item, index) => (
+                    <div key={index} className="icon-item">
 
-                            <MediaUploadCheck>
-                                <MediaUpload
-                                    onSelect={(media) => updateItem(index, 'icon', media.url)}
-                                    allowedTypes={['image']}
-                                    render={({ open }) => (
-                                        <Button onClick={open} variant="primary">
-                                            {item.icon ? 'Change Image' : 'Select Image'}
-                                        </Button>
-                                    )}
-                                />
-                            </MediaUploadCheck>
-            
-                            {item.icon && <img src={item.icon} alt="" />}
-
-                            <RichText
-                                tagName="h3"
-                                className="h4 icon-item-title"
-                                value={item.title}
-                                onChange={(value) =>
-                                    updateItem(index, 'title', value)
-                                }
-                                placeholder="Icon item title…"
+                        <MediaUploadCheck>
+                            <MediaUpload
+                                onSelect={(media) => updateItem(index, 'icon', media.url)}
+                                allowedTypes={['image']}
+                                render={({ open }) => (
+                                    <Button onClick={open} variant="primary">
+                                        {item.icon ? 'Change Image' : 'Select Image'}
+                                    </Button>
+                                )}
                             />
+                        </MediaUploadCheck>
 
-                            <RichText
-                                tagName="p"
-                                className="icon-item-content"
-                                value={item.text}
-                                onChange={(value) =>
-                                    updateItem(index, 'text', value)
-                                }
-                                placeholder="Icon item text…"
-                            />
-                        </div>
-                    ))}
+                        {item.icon && <img src={item.icon} alt="" />}
+
+                        <RichText
+                            tagName="h3"
+                            className="h4 icon-item-title"
+                            value={item.title}
+                            onChange={(value) =>
+                                updateItem(index, 'title', value)
+                            }
+                            placeholder="Icon item title…"
+                        />
+
+                        <RichText
+                            tagName="p"
+                            className="icon-item-content"
+                            value={item.text}
+                            onChange={(value) =>
+                                updateItem(index, 'text', value)
+                            }
+                            placeholder="Icon item text…"
+                        />
+
+                        <Button
+                            variant="secondary"
+                            isDestructive
+                            onClick={() => removeItem(index)}
+                        >
+                            Remove Item
+                        </Button>
+                    </div>
+                ))}
 
                 <Button
                     variant="primary"

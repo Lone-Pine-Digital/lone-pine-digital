@@ -1185,9 +1185,13 @@
   align-items: center;
   margin: 2rem 0 0;
 }
-@media screen and (min-width: 1024px) {
-  .icons-section .icons {
-    margin: 0;
+.icons-section .icons .swiper-wrapper {
+  margin: 2rem 0 0;
+}
+@media screen and (min-width: 992px) {
+  .icons-section .icons .swiper-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 .icons-section .icons .icon-item {

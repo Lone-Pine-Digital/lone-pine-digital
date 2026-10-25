@@ -10584,7 +10584,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var swiper_bundle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper/bundle */ "./node_modules/swiper/swiper-bundle.mjs");
 
 document.addEventListener("DOMContentLoaded", () => {
-  if (window.innerWidth <= 767) {
+  if (window.innerWidth <= 991) {
     const sliders = document.querySelectorAll(".swiper-mobile");
     sliders.forEach(slider => {
       new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](slider, {
