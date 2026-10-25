@@ -925,8 +925,8 @@
   }
 }
 .testimonials-section .testimonials .testimonial-item .testimonial-item-icon {
-  width: 100px;
-  height: 100px;
+  max-width: 150px;
+  max-height: 150px;
   margin: 0 auto 1.5rem;
 }
 @media (min-width: 1024px) {

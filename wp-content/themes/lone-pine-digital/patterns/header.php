@@ -62,7 +62,7 @@
         <div class="desktop-menu">
             <ul class="menu-wrapper">
                 <li class="menu-item"><a href="/services">Services</a></li>
-                <li class="menu-item"><a href="/clients">Clients</a></li>
+                <!--<li class="menu-item"><a href="/clients">Clients</a></li>-->s
                 <li class="menu-item"><a href="/frequently-asked-questions">FAQs</a></li>
                 <li class="menu-item"><a href="/contact">Contact</a></li>
             </ul>
