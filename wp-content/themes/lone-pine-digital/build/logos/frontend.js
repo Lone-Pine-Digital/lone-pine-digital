@@ -10591,6 +10591,7 @@ document.addEventListener('DOMContentLoaded', () => {
     speed: 10000,
     freeMode: true,
     freeModeMomentum: false,
+    centerInsufficientSlides: true,
     autoplay: {
       delay: 0
     },
