@@ -918,22 +918,18 @@
 }
 .testimonials-section .testimonials .testimonial-item {
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 @media (min-width: 1024px) {
   .testimonials-section .testimonials .testimonial-item {
     margin-bottom: 2.5rem;
+    text-align: left;
   }
 }
 .testimonials-section .testimonials .testimonial-item .testimonial-item-icon {
   max-width: 150px;
   max-height: 150px;
   margin: 0 auto 1.5rem;
-}
-@media (min-width: 1024px) {
-  .testimonials-section .testimonials .testimonial-item .testimonial-item-icon {
-    width: 75px;
-    height: 75px;
-  }
 }
 .testimonials-section .testimonials .testimonial-item .testimonial-item-icon img {
   max-width: 100%;
